@@ -7,8 +7,11 @@ const validity = () => {
   document.querySelector("#success").style.display = "none";
   document.querySelector("#warning").style.display = "none";
 
-// Determines if yes/no checked
+// If yes/no checked
 // I had trouble getting the topping list to default to not showing
+// I tried renaming one of the ids but it broke ;-;
+// It keeps breaking... ;-;
+
   if (document.getElementsByName("toppings-checked")[0].checked)
     document.querySelector(".topping-list").style.display = "block";
   if (document.getElementsByName("toppings-checked")[1].checked)
